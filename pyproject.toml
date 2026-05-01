@@ -1,8 +1,8 @@
 [project]
 name = "nexgml"
-version = "1.5.1"
+version = "1.5.3"
 description = "NexGML — Next Generation Machine Learning (educational ML utilities)"
-readme = "README.md"
+readme = {file = "README.md", content-type = "text/markdown"}
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [ {name = "Nexo-kun"} ]
@@ -12,8 +12,11 @@ dependencies = ["numpy>=1.23","scipy>=1.10", "typing_extensions"]
 requires = ["setuptools>=61.0","wheel"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+
 [project.urls]
-Homepage = "https://github.com/Next-Aura/Nexarians"
-Documentation = "https://github.com/Next-Aura/Nexarians#documentation"
-Source = "https://github.com/Next-Aura/Nexarians"
-Tracker = "https://github.com/Next-Aura/Nexarians/issues"
+Homepage = "https://github.com/T3-Lab/nexgml"
+Documentation = "https://github.com/T3-Lab/nexgml#documentation"
+Source = "https://github.com/T3-Lab/nexgml"
+Tracker = "https://github.com/T3-Lab/nexgml/issues"

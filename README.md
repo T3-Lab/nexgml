@@ -1,22 +1,20 @@
-# Nexarians - Open source machine learning repository for community
-
 [![PyPI version](https://badge.fury.io/py/nexgml.svg)](https://pypi.org/project/nexgml/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Next-Aura/Nexarians/blob/main/LICENSE) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/T3-Lab/nexgml/blob/main/LICENSE) 
 
-## 🔬 NexGML PyPI package: Transparent, Modular, and Easy to use
+# NexGML (Next Generation Machine Learning)
 
 NexGML (Next Generation Machine Learning) is a custom Machine Learning utility package built for educational and research purposes, emphasizing **code transparency** and **high performance** with efficient python implementation.
 
-### Key Features & Technology Stack
+## Key Features & Technology Stack
   * **Modular Helpers:** Separates complex logic into focused helper modules (`ForLinear`, `ForTree`, `Indexing`, `Metrics`, `Guardians`) for easy customization.
   * **Sparse Data Ready:** Full support for `scipy.sparse` matrices (CSR/CSC) for memory efficiency.
 
-### Installation
+## Installation
 ```bash
 pip install nexgml
 ```
 
-### 1\. Classifiers (The Models)
+## 1\. Classifiers (The Models)
 
 The primary model is the **Gradient Supported Intense Classifier (GSIC)**.
 
@@ -37,7 +35,7 @@ model.fit(X_train, y_train)
 print(f"Final Training Loss: {model.loss_history[-1]:.6f}")
 ```
 
-### 2\. Regressors (The Models)
+## 2\. Regressors (The Models)
 
 The primary model is the **Gradient Supported Intense Regressor (GSIR)**.
 
@@ -58,7 +56,7 @@ model.fit(X_train, y_train)
 print(f"Final Training Loss: {model.loss_history[-1]:.6f}")
 ```
 
-### 2\. Helper Modules (Performance Backbone)
+## 3\. Helper Modules (Performance Backbone)
 
 These modules contain the high-speed math used internally.
 
@@ -69,15 +67,6 @@ These modules contain the high-speed math used internally.
 | `nexgml.indexing` | **Data Utilities.** One-hot encoding, smart feature slicing (`standard_indexing`). | `indexing.standard_indexing(n_features, 'sqrt')` |
 | `nexgml.metrics` | **Model Metrics.** Regressor and classifier models metrics computation (R^2, F1, Accuracy Score) | `accuracy_score(y_true, pred)` |
 | `nexgml.guardians` | **Numerical stability**. Value clipping, invalid value detecting (safe_array, hasinf, hasnan) | `safe_array(array)` |
-
-## ConceptDesign
-*ConceptDesign* (CoDe) is a folder where the design of a concept that is material for community research is defined and developed via files with markdown (md) existence.
-
-## ProtoConceptDesign
-*ProtoConceptDesign* (ProCoDe) is a folder that stores the main ideas, basic theorems, main ideas and context definitions of a concept design which are in the *ConceptDesign* folder. The purpose of separating CoDe and ProCoDe is to provide clarity between concept definitions and context definitions.
-
-## DesignCache
-*DesignCache* is a folder that contains concept designs that are deemed to have failed, the failure in question could be an error in the main idea of ​​the concept from the start, a refutation of the theory on which a concept is based, and other things that can affect the interpretability of the definition and meaning of a concept.
 
 ## 📝 Documentation & Exploration
 
